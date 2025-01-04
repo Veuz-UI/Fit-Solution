@@ -1,48 +1,4 @@
-/* ----------------------------------------------------------------------------------------
-* Author        : Awaiken
-* Template Name : Infine - Life and Business Coach HTML Template
-* File          : CSS File
-* Version       : 1.0
-* ---------------------------------------------------------------------------------------- */
-/* INDEX
-----------------------------------------------------------------------------------------
-01. Global Variables
-02. General css
-03. Header css
-04. Hero css
-05. About Us css
-06. Our Services css
-07. Our Potential Css
-08. Our Pricing Css
-09. Our Expertise Css
-10. Intro Video Css
-11. How We Work Css
-12. Company Growth Css
-13. Our FAQs Css
-14. Our Testimonial css
-15. Our Blog Css
-16. Footer css
-17. About Us Page css
-18. Services Page css
-19. Service Single css
-20. Blog Archive css
-21. Blog Single css
-22. Team Page css
-23. Team Single css
-24. Pricing Page css
-25. Testimonial Page css
-26. Image Gallery css
-27. Video Gallery css
-28. FAQs Page css
-29. Contact Us Page css
-30. Book Appointment Page css
-31. 404 Page css
-32. Responsive css
--------------------------------------------------------------------------------------- */
 
-/************************************/
-/*** 	 01. Global Variables	  ***/
-/************************************/
 
 :root {
 	--primary-color: #042A2D;
@@ -4279,6 +4235,40 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 
+.to-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #1e1e1e;
+    color: var(--yellow-color);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+	transition:  0.3s ease-out;
+}
+
+.to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.to-top-btn:hover {
+    background-color: var(--yellow-color);
+	color: var(--accent-color);
+	transition:  0.3s ease-out;
+}
+
+
+
 /************************************/
 /***       32. Responsive Css     ***/
 /************************************/
@@ -5327,6 +5317,13 @@ header.main-header .header-sticky.active .container-fluid::before {
 
 	.error-page-content-body p {
 		margin-bottom: 20px;
+	}
+	.our-potential-img figure{
+		height: auto;
+	}
+
+	.intro-video{
+		background-size: cover;
 	}
 }
 

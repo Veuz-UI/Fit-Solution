@@ -265,3 +265,29 @@
 	}
 	
 })(jQuery);
+
+
+// to top button
+
+// Select the Back to Top button
+const toTopBtn = document.getElementById('toTopBtn');
+
+// Show or hide the button based on scroll position
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        toTopBtn.classList.add('show');
+    } else {
+        toTopBtn.classList.remove('show');
+    }
+});
+
+// Smooth scroll to the top when the button is clicked
+toTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+
+
