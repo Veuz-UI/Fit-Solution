@@ -4254,6 +4254,10 @@ header.main-header .header-sticky.active .container-fluid::before {
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 	transition:  0.3s ease-out;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 999;
 }
 
 .to-top-btn.show {
