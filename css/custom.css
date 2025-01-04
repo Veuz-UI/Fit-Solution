@@ -1569,6 +1569,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 	background: url('../images/about-video-bg.jpg');
 	background-position: center;
 	background-size: contain;
+	background-repeat: no-repeat;
 	overflow: hidden;
 }
 
