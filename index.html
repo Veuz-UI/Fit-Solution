@@ -95,7 +95,9 @@
     <div class="hero bg-section hero-video">
         <!-- Video Start -->
         <div class="hero-bg-video">
-            <video autoplay muted loop id="myVideo"><source src="images/banner-video.mp4" type="video/mp4"></video>
+            <video autoplay muted loop playsinline id="bannerVideo">
+                <source src="images/banner-video.mp4" type="video/mp4">
+            </video>
         </div>
         <!-- Video End -->
         <div class="hero-section">            
@@ -905,6 +907,15 @@
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
 	<!-- <script src="../../assets/js/theme-panel.js"></script> -->
+
+
+    <script>
+                    const bannerVideo = document.getElementById("bannerVideo");
+
+            if (window.innerWidth <= 768) { // Adjust for mobile or small screens
+            bannerVideo.removeAttribute("autoplay");
+            }
+    </script>
 </body>
 
 </html>
