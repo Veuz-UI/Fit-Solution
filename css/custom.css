@@ -694,7 +694,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	padding: 200px 30px 100px;
+	padding: 200px 30px 50px;
 	margin-top: -120px;
 	overflow: hidden;
 }
@@ -2337,11 +2337,11 @@ header.main-header .header-sticky.active .container-fluid::before {
 
 .page-header {
 	position: relative;
-	background: url('../images/page-header-bg.jpg') no-repeat;
+	background: url('../images/new/inner-banner.jpg') no-repeat;
 	background-position: center center;
 	background-size: cover;
 	overflow: hidden;
-	padding: 250px 0 140px;
+	padding: 150px 0 140px;
 	margin-top: -120px;
 }
 
@@ -2376,7 +2376,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 
 .page-header-box h1 span {
 	font-weight: 700;
-	background-image: linear-gradient(267.43deg, var(--accent-color) 4.95%, var(--dark-color) 97.92%);
+	background-image: linear-gradient(267.43deg, var(--yellow-color) 4.95%, var(--yellow-color) 97.92%);
 	background-clip: text;
 	-webkit-text-fill-color: transparent
 }
@@ -2399,7 +2399,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 .page-header-box ol li.breadcrumb-item.active {
-	color: var(--accent-color);
+	color: var(--yellow-color);
 }
 
 .page-header-box ol .breadcrumb-item+.breadcrumb-item::before {
@@ -2407,13 +2407,13 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 .our-approach {
-	background: var(--white-color);
+	/* background: var(--white-color); */
 	padding: 100px 0;
 }
 
 .mission-vision-item {
 	position: relative;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .mission-vision-list .col-md-6:nth-child(odd) .mission-vision-item:after {
@@ -2428,11 +2428,11 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 .mission-vision-list .col-md-6:nth-child(odd) .mission-vision-item {
-	padding-right: 45px;
+	padding-right: 30px;
 }
 
 .mission-vision-list .col-md-6:nth-child(even) .mission-vision-item {
-	padding-left: 45px;
+	padding-left: 30px;
 }
 
 .mission-vision-item .icon-box {
@@ -2480,26 +2480,21 @@ header.main-header .header-sticky.active .container-fluid::before {
 	width: calc(100% - 70px);
 }
 
-.our-approach-content-footer a {
+.our-approach-content-footer {
 	font-weight: 400;
 	line-height: 1.4em;
-	text-align: center;
 	width: 100%;
 	padding: 16px 20px;
 	border-radius: 10px;
+	background-color: var(--accent-color);
+	color: var(--white-color);
 }
 
-.our-approach-content-footer a:before {
-	display: none;
+.our-approach-content-footer p{
+	margin-bottom: 0px;
 }
 
-.our-approach-content-footer a u {
-	transition: all 0.3s ease-in-out;
-}
 
-.our-approach-content-footer a:hover u {
-	color: var(--primary-color);
-}
 
 .our-approach-image {
 	padding-left: 30px;
@@ -2573,6 +2568,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 
 .company-experience-content .section-title p {
 	color: var(--secondary-color);
+	font-weight: 300;
 }
 
 .company-experience-content .section-btn {
@@ -2582,17 +2578,16 @@ header.main-header .header-sticky.active .container-fluid::before {
 .company-experience-list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 30px;
-	margin-left: 20px;
+	gap: 50px;
 }
 
 .company-experience-item {
-	width: calc(50% - 15px);
+	width: auto;
 }
 
 .company-experience-item h2 {
-	color: var(--accent-color);
-	font-size: 40px;
+	color: var(--yellow-color);
+	font-size: 50px;
 	margin-bottom: 10px;
 }
 
@@ -2942,8 +2937,8 @@ header.main-header .header-sticky.active .container-fluid::before {
 
 .service-catagery-list ul li {
 	border-bottom: 1px solid var(--divider-color);
-	padding-bottom: 20px;
-	margin-bottom: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -3139,6 +3134,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px 30px;
+	margin-bottom: 20px;
 }
 
 .business-planing-img {
@@ -4184,6 +4180,21 @@ header.main-header .header-sticky.active .container-fluid::before {
 	display: none;
 }
 
+.para-color {
+	color: var(--secondary-color);
+	font-weight: 300;
+}
+
+
+.service-detaile-head{
+	font-size: 18px;
+	font-weight: 600;
+	font-style: italic;
+	color: var(--accent-color);
+	margin-bottom: 30px;
+}
+
+
 /************************************/
 /*** 	   31. 404 Page css       ***/
 /************************************/
@@ -4271,6 +4282,15 @@ header.main-header .header-sticky.active .container-fluid::before {
 	transition:  0.3s ease-out;
 }
 
+
+.section-row-2{
+	margin-bottom: 50px;
+}
+
+
+.custom-margin-intro-video{
+	margin: 100px 0px;
+}
 
 
 /************************************/
